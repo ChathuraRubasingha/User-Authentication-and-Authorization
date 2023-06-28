@@ -72,7 +72,7 @@ exports.loginUser = (req, res) => {
                       res.status(500).json({error: "Internal server error"});
                     }else{
                       // Send the generated token to the client
-                      res.status(200).json({ token , id: results[0].id, name: results[0].username});
+                      res.status(200).json({ token });
                     }
                   }
                 );
